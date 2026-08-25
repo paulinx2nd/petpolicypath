@@ -1,0 +1,190 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "compile_tasks": {
+      "params": [
+        [
+          "application_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "complete_task": {
+      "params": [
+        [
+          "application_id",
+          "string"
+        ],
+        [
+          "clause_id",
+          "string"
+        ],
+        [
+          "evidence_note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "deactivate_policy": {
+      "params": [
+        [
+          "policy_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "decide_application": {
+      "params": [
+        [
+          "application_id",
+          "string"
+        ],
+        [
+          "approve",
+          "bool"
+        ],
+        [
+          "decision_note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "get_application": {
+      "params": [
+        [
+          "application_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_application_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "get_application_id": {
+      "params": [
+        [
+          "index",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_policy": {
+      "params": [
+        [
+          "policy_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_policy_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "get_policy_id": {
+      "params": [
+        [
+          "index",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "open_application": {
+      "params": [
+        [
+          "policy_id",
+          "string"
+        ],
+        [
+          "application_key",
+          "string"
+        ],
+        [
+          "manager",
+          "address"
+        ],
+        [
+          "pet_profile",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "publish_policy": {
+      "params": [
+        [
+          "policy_key",
+          "string"
+        ],
+        [
+          "title",
+          "string"
+        ],
+        [
+          "document",
+          {
+            "$dict": "any"
+          }
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "withdraw_application": {
+      "params": [
+        [
+          "application_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    }
+  }
+}
